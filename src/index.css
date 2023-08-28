@@ -1,12 +1,69 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lato:wght@300&family=Montserrat:wght@300&family=Noto+Sans:wght@200&family=Open+Sans:wght@300;400&family=Roboto:wght@100;300&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
-body{
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
-  align-items: center;
-  background: #242424;
+
+:root {
+  --container-lg: 100%;
+}
+
+/* Styles for dark mode */
+.dark {
+  --body-background: hsl(207, 26%, 17%);
+  --text-color: #f9f9f9;
+  --link-color:#f9f9f9;
+  --card-bg:hsl(209,22%,91%);
+  --card-text:hsl(207, 26%, 17%);
+  
+}
+
+/* Styles for light mode */
+.light {
+  --body-background: hsl(20, 36%, 47%);
+  --text-color: #242424;
+  --link-color:#000;
+  --card-bg:hsl(209,22%,21%);
+  --card-text:hsl(209, 22%, 91%);
+}
+body {
+  background-color: var(--body-background);
+  color: var(--text-color);
+}
+
+.main {
+  width: var(--container-lg);
+  margin-inline: auto;
+  max-width: 950px;
+}
+
+.not-found {
+  text-align: center;
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #f2dede;
+  color: #a94442;
+  border: 1px solid #ebccd1;
+  border-radius: 4px;
+}
+.error-container {
+  margin-top: 4rem;
+}
+.error-message {
+  position: relative;
+}
+.error-message span {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 16px;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.158);
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

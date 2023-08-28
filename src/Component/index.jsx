@@ -1,0 +1,5 @@
+export {default as AllCountries} from '../Component/AllCountries/AllCountries'
+export {default as CountryInfo} from '../Component/CountryInfo/CountryInfo'
+export {default as Loader} from '../Component/Loader/Loader'
+export {default as SearchBar} from '../Component/Searchbar/SearchBar'
+export {default as FilterRegion} from '../Component/FilterRegion/FilterRegion'

@@ -1,0 +1,35 @@
+.select-region {
+  padding: 0.6rem 1.9rem;
+  background-color: var( --card-bg);
+  color: var( --card-text);
+  font-size: 0.8rem;
+  border-radius: 0.5rem 0;
+  cursor: pointer;
+  transition: 0.4s ease-in-out all;
+}
+.select-region:focus{
+    border: 1px solid #f9f9f9;
+    border-radius: 0;
+}
+.option{
+    padding: 1.5rem;
+    margin-top: 0.4rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.4s ease-in-out all;
+}
+
+
+@media secreen and  (max-width:1024px) {
+    .select-region{
+        width: 30vw;
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .select-region{
+        width: 50vw;
+    }
+    
+}
